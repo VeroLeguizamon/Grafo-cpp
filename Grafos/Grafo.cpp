@@ -90,7 +90,7 @@ void Grafo::mostrarListaDeAdyacencia() {
 		cout << vertice->obtenerNombre() << " -> ";
 		Arista* arista = vertice->obtenerAdyacente();
 		while (arista != NULL) {
-			cout << arista->obtenerAdyacente()->obtenerNombre() << " -> ";
+			cout <<"("<< arista->obtenerPeso()<<"km)"<<arista->obtenerAdyacente()->obtenerNombre() << " -> ";
 			arista = arista->obtenerSiguiente();
 		}
 		cout << endl;
